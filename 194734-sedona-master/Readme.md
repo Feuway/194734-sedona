@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Смирнов](https://up.htmlacademy.ru/htmlcss/13/user/194734).
-* Наставник: [Максим Фарига].(https://up.htmlacademy.ru/htmlcss/13/user/6090).
+* Наставник: 
 
 ---
 
