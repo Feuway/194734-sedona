@@ -5,8 +5,126 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+		<div class="layout-center">
+			<header class="main-header">
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+						<li><a href="index.html" class="logo-menu"></a></li>
+						<li><a href="#">Карта штата</a></li>
+						<li><a href="#">Гостиницы</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="content">
+				<section class="main-foto">
+					<div class="foto-title">
+						<h1>Welcome</h1> 
+						<p class="bottom-line">to the gorgeous</p>
+					</div>
+					<h1 class="foto-name">Sedona</h1>
+					<p class="foto-signature">Because the Grand Canyon sucks</p>
+				</section>
+				<div class="content-description">
+					<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
+				<div class="features">
+					<div class="features-description">
+						<h2>Настоящий гоородок</h2>
+						<div class="features-number">№1</div>
+						<p>Седона не атракцион для туристов, там течетсвоя жизнь</p>
+					</div>
+					<div class="features-foto"></div>
+				</div>
+				<div class="features-details">
+					<div class="features-details-housing">
+						<h2>Жилье</h2>
+						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</div>
+					<div class="features-details-food">
+						<h2>Еда</h2>
+						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+					</div>
+					<div class="features-details-souvenirs">
+						<h2>Сувениры</h2>
+						<p>Не только китайского, но и местного производства!</p>
+					</div>
+				</div>
+				<div class="features">
+					<div class="features-foto"></div>
+					<div class="features-description">
+						<h2>Там есть мост дьявола</h2>
+						<div class="features-number">№2</div>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+					<div class="features">
+						<div class="features-description">
+							<h2>Небольшая площадь</h2>
+							<div class="features-number">№3</div>
+							<p>Все достопримечательности находятся очень близко</p>
+						</div>
+						<div class="features-description">
+							<h2>Красивая дорога</h2>
+							<div class="features-number">№4</div>
+							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
+						<div class="features-description">
+							<h2>Мало туристов</h2>
+							<div class="features-number">№5</div>
+							<p>Большинство едет в гранд каньон и толпится там</p>
+						</div>
+					</div>
+				</div>
+				<section class="interest">
+					<h2></h2>
+					<p></p>
+				</section>
+				<section class="map"></section>
+				<section class="search">
+					<h2>Поиск гостиницы в Седоне</h2>
+					<form action="" method="post">
+						<div class="date">
+							<label for="date-arrival">Дата заезда</label>
+							<input type="text" name="date-arrival" id="date-arrival">
+						</div>
+						<div class="date">
+							<label for="check-out">Дата выезда</label>
+							<input type="text" name="check-out" id="check-out">
+						</div>
+						<div class="number-people">
+							<div class="adults">
+								<label for="adults">Взрослые</label>
+								<input type="button" value="-">
+								<input type="text" name="adults" id="adults">
+								<input type="button" value="+">
+							</div>
+							<div class="children">
+								<label for="children">Дети</label>
+								<input type="button" value="-">
+								<input type="text" name="children" id="children">
+								<input type="button" value="+">
+							</div>
+							<input type="submit" name="btn-search" value="Отправить">
+						</div>
+					</form>
+				</section>
+			</main>
+			<footer class="main-footer">
+				<section class="footer-hashtag">
+					<a href="#">#visitsedona</a>
+				</section>
+				<section class="footer-social">
+					<a href="#" class="social-btn social-btn-tw"></a>
+					<a href="#" class="social-btn social-btn-fb"></a>
+					<a href="#" class="social-btn social-btn-yt"></a>
+				</section>
+				<section class="footer-copyright">
+					<p>Website by</p>
+					<a class="logo-copyright" href="https://htmlacademy.ru"></a>
+				</section>
+			</footer>
+		</div>
   </body>
 </html>
