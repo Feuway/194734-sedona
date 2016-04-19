@@ -11,7 +11,7 @@
 					<ul>
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Фото и видео</a></li>
-						<li><a href="index.html" class="logo-menu"></a></li>
+						<li><a href="index.html" class="logo-menu"><img src="#" alt="logo"></a></li>
 						<li><a href="#">Карта штата</a></li>
 						<li><a href="#">Гостиницы</a></li>
 					</ul>
@@ -20,60 +20,57 @@
 			<main class="content">
 				<section class="main-foto">
 					<div class="foto-title">
-						<h1>Welcome</h1> 
-						<p class="bottom-line">to the gorgeous</p>
+						<p>Welcome - to the gorgeous</p>
+						<h1>Sedona</h1>
+						<p>Because the Grand Canyon sucks</p>
 					</div>
-					<h1 class="foto-name">Sedona</h1>
-					<p class="foto-signature">Because the Grand Canyon sucks</p>
 				</section>
 				<div class="content-description">
 					<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				</div>
-				<div class="features">
+				<div class="features features-left">
 					<div class="features-description">
-						<h2>Настоящий гоородок</h2>
+						<h2 class="features-title">Настоящий гоородок</h2>
 						<div class="features-number">№1</div>
-						<p>Седона не атракцион для туристов, там течетсвоя жизнь</p>
+						<p class="features-text">Седона не атракцион для туристов, там течетсвоя жизнь</p>
 					</div>
-					<div class="features-foto"></div>
 				</div>
 				<div class="features-details">
 					<div class="features-details-housing">
-						<h2>Жилье</h2>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						<h2 class="features-title">Жилье</h2>
+						<p class="features-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 					<div class="features-details-food">
-						<h2>Еда</h2>
-						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+						<h2 class="features-title">Еда</h2>
+						<p class="features-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
 					</div>
 					<div class="features-details-souvenirs">
-						<h2>Сувениры</h2>
-						<p>Не только китайского, но и местного производства!</p>
+						<h2 class="features-title">Сувениры</h2>
+						<p class="features-text">Не только китайского, но и местного производства!</p>
 					</div>
 				</div>
-				<div class="features">
-					<div class="features-foto"></div>
+				<div class="features features-right">
 					<div class="features-description">
-						<h2>Там есть мост дьявола</h2>
+						<h2 class="features-title">Там есть мост дьявола</h2>
 						<div class="features-number">№2</div>
-						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						<p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
-					<div class="features">
+					<div class="features features-no-foto">
 						<div class="features-description">
-							<h2>Небольшая площадь</h2>
+							<h2 class="features-title">Небольшая площадь</h2>
 							<div class="features-number">№3</div>
-							<p>Все достопримечательности находятся очень близко</p>
+							<p class="features-text">Все достопримечательности находятся очень близко</p>
 						</div>
 						<div class="features-description">
-							<h2>Красивая дорога</h2>
+							<h2 class="features-title">Красивая дорога</h2>
 							<div class="features-number">№4</div>
-							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+							<p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</div>
 						<div class="features-description">
-							<h2>Мало туристов</h2>
+							<h2 class="features-title">Мало туристов</h2>
 							<div class="features-number">№5</div>
-							<p>Большинство едет в гранд каньон и толпится там</p>
+							<p class="features-text">Большинство едет в гранд каньон и толпится там</p>
 						</div>
 					</div>
 				</div>
@@ -81,48 +78,48 @@
 					<h2></h2>
 					<p></p>
 				</section>
-				<section class="map"></section>
 				<section class="search">
-					<h2>Поиск гостиницы в Седоне</h2>
-					<form action="" method="post">
-						<div class="date">
+					<h2><a href="form.html">Поиск гостиницы в Седоне</a></h2>
+					<form class="search-hotel" action="" method="post" name="search-hotel">
+						<fieldset class="date">
 							<label for="date-arrival">Дата заезда</label>
-							<input type="text" name="date-arrival" id="date-arrival">
-						</div>
-						<div class="date">
+							<input type="date" name="date-arrival" id="date-arrival">
+						</fieldset>
+						<fieldset class="date">
 							<label for="check-out">Дата выезда</label>
-							<input type="text" name="check-out" id="check-out">
-						</div>
-						<div class="number-people">
-							<div class="adults">
+							<input type="date" name="check-out" id="check-out">
+						</fieldset>
+						<fieldset class="number-people">
+							<fieldset class="adults">
 								<label for="adults">Взрослые</label>
-								<input type="button" value="-">
+								<button type="button">-</button>
 								<input type="text" name="adults" id="adults">
-								<input type="button" value="+">
-							</div>
-							<div class="children">
+								<button type="button">+</button>
+							</fieldset>
+							<fieldset class="children">
 								<label for="children">Дети</label>
-								<input type="button" value="-">
+								<button type="button">-</button>
 								<input type="text" name="children" id="children">
-								<input type="button" value="+">
-							</div>
+								<button type="button">+</button>
+							</fieldset>
 							<input type="submit" name="btn-search" value="Отправить">
-						</div>
+						</fieldset>
 					</form>
 				</section>
+				<section class="map"></section>
 			</main>
 			<footer class="main-footer">
 				<section class="footer-hashtag">
 					<a href="#">#visitsedona</a>
 				</section>
 				<section class="footer-social">
-					<a href="#" class="social-btn social-btn-tw"></a>
-					<a href="#" class="social-btn social-btn-fb"></a>
-					<a href="#" class="social-btn social-btn-yt"></a>
+					<a href="#" class="social-btn social-btn-tw">tw</a>
+					<a href="#" class="social-btn social-btn-fb">fb</a>
+					<a href="#" class="social-btn social-btn-yt">yt</a>
 				</section>
 				<section class="footer-copyright">
 					<p>Website by</p>
-					<a class="logo-copyright" href="https://htmlacademy.ru"></a>
+					<a class="logo-copyright" href="https://htmlacademy.ru">logo</a>
 				</section>
 			</footer>
 		</div>

@@ -17,69 +17,70 @@
 					</ul>
 				</nav>
 			</header>
-				<main class="content">
-					<section class="filters-search">
-						<form action="" method="post">
-							<fieldset class="filter-infrastructure">
-								<legend>Инфраструктура:</legend>
-								<input type="checkbox" name="Pool" id="Pool" checked>
-								<label for="Pool">Бассейн</label>
-								<input type="checkbox" name="Parking" id="Parking">
-								<label for="Parking">Парковка</label>
-								<input type="checkbox" name="wi-fi" id="wi-fi">
-								<label for="wi-fi">Wi-Fi</label>
-							</fieldset>
-							<fieldset class="filter-housing">
-								<legend>Тип жилья:</legend>
-								<input type="checkbox" name="hotel" id="hotel" checked>
-								<label for="hotel">Гостиница</label>
-								<input type="checkbox" name="Motel" id="Motel" checked>
-								<label for="Motel">Мотель</label>
-								<input type="checkbox" name="Apartments" id="Apartments" checked>
-								<label for="Apartments">Апартаменты</label>
-								</legend>
-							</fieldset>
-							<fieldset class="filter-price">
-								<legend>Стоимость в сутки (р):</legend>
-								<div class="price-controls">
-									<div class="price-controls-box">
-										<label for="min-price">От</label>
-										<input type="text" name="min-price" id="min-price">
-									</div>
-									<div class="price-controls-box">
-										<label for="max-price">До</label>
-										<input type="text" name="max-price" id="max-price">
-									</div>
+			<main class="content">
+				<section class="filters-search">
+					<form action="" method="post">
+						<fieldset class="filter-infrastructure">
+							<legend>Инфраструктура:</legend>
+							<input type="checkbox" name="Pool" id="Pool" checked>
+							<label for="Pool">Бассейн</label>
+							<input type="checkbox" name="Parking" id="Parking">
+							<label for="Parking">Парковка</label>
+							<input type="checkbox" name="wi-fi" id="wi-fi">
+							<label for="wi-fi">Wi-Fi</label>
+						</fieldset>
+						<fieldset class="filter-housing">
+							<legend>Тип жилья:</legend>
+							<input type="checkbox" name="hotel" id="hotel" checked>
+							<label for="hotel">Гостиница</label>
+							<input type="checkbox" name="Motel" id="Motel" checked>
+							<label for="Motel">Мотель</label>
+							<input type="checkbox" name="Apartments" id="Apartments" checked>
+							<label for="Apartments">Апартаменты</label>
+							</legend>
+						</fieldset>
+						<fieldset class="filter-price">
+							<legend>Стоимость в сутки (р):</legend>
+							<div class="price-controls">
+								<div class="price-controls-box">
+									<label for="min-price">От</label>
+									<input type="text" name="min-price" id="min-price">
 								</div>
-								<div class="range-controls">
-									<div class="scale">
-										<div class="bar"></div>
-									</div>
-									<div class="toggle min-toggle"></div>
-									<div class="toggle max-toggle"></div>
+								<div class="price-controls-box">
+									<label for="max-price">До</label>
+									<input type="text" name="max-price" id="max-price">
 								</div>
-							</fieldset>
-						</form>
-					</section>
-					<section class="search-results-sort">
-						<div class="results-found">
-							<p>Найдено:</p>
-							<span>3</span>
-						</div>
-						<div class="sort-type">
-							<p>Сортировка</p>
-							<a href="#" class="active">По цене</a>
-							<a href="#">По типу</a>
-							<a href="#">По рейтингу</a>
-						</div>
-						<div class="sort-filter">
-							<a href="#" class="sort-fiter-asc"></a>
-							<a href="#" class="sort-filter-desc"></a>
-						</div>
-					</section>
+							</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle min-toggle">min-toggle</div>
+								<div class="toggle max-toggle">max-toggle</div>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+				<section class="search-results-sort">
+					<div class="results-found">
+						<p>Найдено:</p>
+						<span>3</span>
+					</div>
+					<div class="sort-type">
+						<p>Сортировка</p>
+						<a href="#" class="active">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По рейтингу</a>
+					</div>
+					<div class="sort-filter">
+						<a href="#" class="sort-fiter-asc"></a>
+						<a href="#" class="sort-filter-desc"></a>
+					</div>
+				</section>
+				<section class="search-results-item">
 					<article class="item-found">
 						<div class="item-foto">
-							<a href="#"></a>
+							<a href="#"><img src="#" alt="hotel"></a>
 						</div>
 						<div class="item-description">
 							<h2 class="item-description-title">
@@ -101,12 +102,14 @@
 								<span class="star-hotel"></span>
 								<span class="star-hotel"></span>
 							</div>
-							<div class="item-rating-points">Рейтинг: 8,5</div>
+							<div class="item-rating-points">Рейтинг:
+								<span>8,5</span>
+							</div>
 						</div>
 					</article>
 					<article class="item-found">
 						<div class="item-foto">
-							<a href="#"></a>
+							<a href="#"><img src="#" alt="hotel"></a>
 						</div>
 						<div class="item-description">
 							<h2 class="item-description-title">
@@ -126,12 +129,14 @@
 								<span class="star-hotel"></span>
 								<span class="star-hotel"></span>
 							</div>
-							<div class="item-rating-points">Рейтинг: 8,9</div>
+							<div class="item-rating-points">Рейтинг:
+								<span>8,9</span>
+							</div>
 						</div>
 					</article>
 					<article class="item-found">
 						<div class="item-foto">
-							<a href="#"></a>
+							<a href="#"><img src="#" alt="hotel"></a>
 						</div>
 						<div class="item-description">
 							<h2 class="item-description-title">
@@ -152,22 +157,25 @@
 								<span class="star-hotel"></span>
 								<span class="star-hotel"></span>
 							</div>
-							<div class="item-rating-points">Рейтинг: 9,2</div>
+							<div class="item-rating-points">Рейтинг:
+								<span>9,2</span>
+							</div>
 						</div>
 					</article>
-				</main>
+				</section>
+			</main>
 			<footer class="main-footer">
 				<section class="footer-hashtag">
 					<a href="#">#visitsedona</a>
 				</section>
 				<section class="footer-social">
-					<a href="#" class="social-btn social-btn-tw"></a>
-					<a href="#" class="social-btn social-btn-fb"></a>
-					<a href="#" class="social-btn social-btn-yt"></a>
+					<a href="#" class="social-btn social-btn-tw">tw</a>
+					<a href="#" class="social-btn social-btn-fb">fb</a>
+					<a href="#" class="social-btn social-btn-yt">yt</a>
 				</section>
 				<section class="footer-copyright">
 					<p>Website by</p>
-					<a class="logo-copyright" href="https://htmlacademy.ru"></a>
+					<a class="logo-copyright" href="https://htmlacademy.ru">logo</a>
 				</section>
 			</footer>
 		</div>
