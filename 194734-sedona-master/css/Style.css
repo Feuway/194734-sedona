@@ -1,0 +1,15 @@
+body {
+	font-family: "PT Sans";
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #000;
+}
+.content h2 {
+	font-size: 21px;
+	font-weight: bold;
+}
+.interest h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
