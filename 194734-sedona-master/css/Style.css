@@ -4,6 +4,13 @@ body {
 	line-height: 21px;
 	font-weight: normal;
 	color: #000;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: #000;
 }
 .content h2 {
 	font-size: 21px;
@@ -13,3 +20,225 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 }
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/********начало сетки********/
+         /**index**/
+
+.layout-center {
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	outline: 1px solid #33a;
+}
+			.main-header ul{
+				font-size: 0;
+				padding: 0 6%;
+			}
+				.main-header ul li {
+					display: inline-block;
+					font-size: 14px;
+					width: 20%;
+					height: 56px;
+					vertical-align: top;
+					text-align: center;
+				}
+				.main-header ul li:nth-child(1),
+				.main-header ul li:nth-child(2) {
+					text-align: left;
+				}
+				.main-header ul li:nth-last-child(1),
+				.main-header ul li:nth-last-child(2) {
+					text-align: right;
+				}
+	.content {
+
+		outline: 1px solid #33a;
+	}
+		.main-foto {
+			height: 508px;
+			position: relative;
+
+			outline: 1px solid #33a;
+		}
+			.main-foto::after {
+				height: 57px;
+				width: 100%;
+				bottom: 0;
+				
+				content: "";
+				display: block;
+				position: absolute;
+				outline: 1px solid #33a;
+			}
+			.content-description {
+				margin: 65px auto 56px;
+				width: 575px;
+				height: 95px;
+				
+				outline: 1px solid #33a;
+			}
+			.features {
+				height: 256px;
+
+				outline: 1px solid #33a;
+			}
+				.features-description {
+					width: 33.33%;
+					height: 100%;
+					float: left;
+
+					outline: 1px solid #33a;
+				}
+				.features-foto {
+					width: 66.66%;
+					height: 100%;
+					float: left;
+
+					outline: 1px solid #33a;
+				}
+			.features-details {
+				height: 330px;
+
+				outline: 1px solid #33a;
+			}
+				.features-details-housing,
+				.features-details-food,
+				.features-details-souvenirs {
+					width: 33.33%;
+					height: 100%;
+					float: left;
+
+					outline: 1px solid #33a;
+				}
+			.interest {
+				width: 575px;
+				margin: 57px auto 54px;
+
+				outline: 1px solid #33a;
+			}
+			.search {
+				width: 568px;
+				margin: 0 auto;
+				margin-bottom: 78px;
+
+				outline: 1px solid #33a;
+			}
+				.search h2 {
+					height: 86px;
+
+					outline: 1px solid #33a;
+				}
+				.search-hotel {
+
+					min-height: 395px;
+					outline: 1px solid #33a;
+				}
+	.main-footer {
+		height: 120px;
+
+		outline: 1px solid #33a;
+	}
+		.footer-hashtag,
+		.footer-social,
+		.footer-copyright {
+			height: 100%;
+			width: 33.33%;
+			float: left;
+
+			outline: 1px solid #33a;
+		}
+         /**catalog**/
+
+		.filters-search {
+			padding: 30px 6%;
+
+			outline: 1px solid #33a;
+		}
+			.filter-infrastructure,
+			.filter-housing {
+				width: 155px;
+				margin-right: 8.33%;
+				float: left;
+
+				outline: 1px solid #33a;
+			}
+			.filter-price {
+				width: 27.33%;
+				float: right;
+
+				outline: 1px solid #33a;
+			}
+		.search-results-sort {
+			padding: 30px 6%;
+
+			outline: 1px solid #33a;
+		}
+			.results-found,
+			.sort-type {
+				margin-right: 4.17%;
+				float: left;
+
+				outline: 1px solid #33a;
+			}
+			.sort-filter {
+				width: 35px;
+				float: right;
+
+				outline: 1px solid #33a;
+			}
+		.search-results-item {
+
+			outline: 1px solid #33a;
+		}
+			.item-found{
+				padding: 30px 6%;
+
+				outline: 1px solid #33a;
+			}
+				.item-foto,
+				.item-description {
+					float: left;
+					margin-right: 2.5%;
+					height: 90px;
+
+					outline: 1px solid #33a;
+				}
+					.item-description-title{
+						margin: 0;
+
+						outline: 1px solid #33a;
+					}
+					.item-description-hotel,
+					.item-description-price {
+						float: left;
+						margin-right: 6px;
+
+						outline: 1px solid #33a;
+					}
+				.item-rating {
+					float: right;
+
+					outline: 1px solid #33a;
+				}
+					.item-rating-star {
+						height: 17px;
+
+						outline: 1px solid #33a;
+					}
+					.item-rating-points {
+						margin-top: 47px;
+
+						outline: 1px solid #33a;
+					}
+
+/********конец сетки********/
+
+
+
+
