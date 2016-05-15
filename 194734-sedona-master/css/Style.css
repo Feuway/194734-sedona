@@ -5,6 +5,20 @@
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
+
+@-webkit-keyframes appearance {
+	0% {opacity: 0;}
+
+	100% {opacity: 1;}
+}
+
+@keyframes appearance {
+	0% {opacity: 0;}
+
+	100% {opacity: 1;}
+}
+
+
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
@@ -35,6 +49,10 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
 .interest h1 {
 	font-size: 30px;
 	font-weight: bold;
@@ -57,7 +75,7 @@ a {
              /**footer_begin**/
 
 			.main-header ul{
-				padding: 0 6%;
+				padding: 0;
 				background: #ffffff;
 				color: #000000;
 				font-size: 0;
@@ -66,12 +84,20 @@ a {
 				.main-header li {
 					display: inline-block;
 					width: 20%;
-					height: 56px; 
 					font-size: 14px;
-					line-height: 3.94;
+					line-height: 26px;
 					font-weight: 700;
 					vertical-align: top;
 					text-align: center;
+					padding-top: 14px;
+					padding-bottom: 16px;
+				}
+				.main-header li:nth-child(3) {
+					padding: 0;
+				}
+				.main-header li:nth-child(5) {
+					width: 15%;
+					padding-left: 38px;
 				}
 					.main-header a:hover {
 						color: #81b3d2;
@@ -83,6 +109,11 @@ a {
 					.main-header .logo-menu {
 						position: relative;
 						z-index: 1000;
+						display: block;
+						margin: 0 auto;
+						margin-bottom: -14px;
+						width: 138px;
+						height: 70px;
 					}
 					.main-header .logo-menu:active {
 						opacity: 1;
@@ -97,14 +128,6 @@ a {
 						color: #766357;
 						opacity: .3;
 					}
-				.main-header li:nth-child(1),
-				.main-header li:nth-child(2) {
-					text-align: left;
-				}
-				.main-header li:nth-last-child(1),
-				.main-header li:nth-last-child(2) {
-					text-align: right;
-				}
 
               /**footer_end**/
 
@@ -147,7 +170,7 @@ a {
 					font-weight: 400;
 				}
 			.features {
-				height: 256px;
+				min-height: 256px;
 				background: #eeeeee;
 				color: #333333;
 				text-align: center;
@@ -159,10 +182,13 @@ a {
 				}
 					.features-title {
 						width: 160px;
-						margin: 55px auto 24px;
+						margin: 47px auto 24px;
 						font-size: 21px;
 						line-height: 21px;
 						font-weight: 700;
+					}
+					.features-big .features-title {
+						margin: 55px auto 24px;
 					}
 					.features-number {
 						position: relative;
@@ -193,7 +219,7 @@ a {
 							border-color: #ffffff;
 						}
 					.features-text {
-						margin: 0 15%;
+						margin: 0 15% 0;
 						font-size: 14px;
 						line-height: 21px;
 						font-weight: 400;
@@ -204,7 +230,7 @@ a {
 			}
 				.features-foto {
 					width: 66.66%;
-					height: 100%;
+					height: 256px;
 					float: left;
 					background: url("../img/city.jpg") no-repeat 50% 54%;
 					background-size: 100%;
@@ -214,7 +240,7 @@ a {
 						background-size: 100%;
 				}
 			.features-details {
-				height: 330px;
+				min-height: 330px;
 				text-align: center;
 			}
 			.features-details h2 {
@@ -228,13 +254,13 @@ a {
 					float: left;
 				}
 				.features-details-housing {
-					background: url("../img/housing.png") no-repeat 50% 23.4%;
+					background: url("../img/housing.png") no-repeat 50% 60px;
 				}
 				.features-details-food {
-					background: url("../img/food.png") no-repeat 50% 23.4%;
+					background: url("../img/food.png") no-repeat 50.3% 61px;
 				}
 				.features-details-souvenirs {
-					background: url("../img/souvenirs.png") no-repeat 50% 23.4%;
+					background: url("../img/souvenirs.png") no-repeat 50.3% 56px;
 				}
 			.interest {
 				width: 575px;
@@ -255,7 +281,7 @@ a {
 				position: relative;
 				width: 568px;
 				margin: 0 auto;
-				margin-bottom: 78px;
+				margin-bottom: -120px;
 				z-index: 1000;
 			}
 				.search h2 {
@@ -270,10 +296,16 @@ a {
 						color: #ffffff;
 					}
 				.search-hotel {
+					position: absolute;
+					display: none;
 					padding: 55px;
 					background: #ffffff;
 					box-shadow: 0 7px 15px 0 rgba(0,0,0, .15);
-
+				}
+				.search-hotel-open {
+					display: block;
+					-webkit-animation: appearance 0.7s;
+					        animation: appearance 0.7s;
 				}
 					.search-hotel label,
 					.search-hotel input {
@@ -298,30 +330,38 @@ a {
 					.search-hotel input:focus {
 						background: #ffffff;
 					}
-					.search-hotel input::placeholder {
-						color: #000000;
+					.search-hotel ::-webkit-input-placeholder {
+						opacity: 1;
+					}
+					.search-hotel ::-moz-placeholder {
+						opacity: 1;
+					}
+					.search-hotel :-ms-input-placeholder {
+						opacity: 1;
 					}
 					.search-hotel label {
 						width: 113px;
 						padding: 9px 0 8px;
 					}
 					.date {
+						position: relative;
 						margin: 0;
 						margin-bottom: 30px;
 						padding: 0;
 						border: none;
 					}
+					.icon-calendar::before { 
+						content: "\e800";
+						position: absolute;
+						bottom: 6px;
+						right: 5px;
+						color: #c2c2c2;
+						font-size: 21px;
+						line-height: 26px;
+					}
 						.date input {
 							width: 289px;
 							padding: 7px 40px 6px 12px;
-						}
-						.icon-calendar::before { 
-							content: "\e800";
-							position: relative;
-							right: -100px;
-							color: #c2c2c2;
-							font-size: 21px;
-							line-height: 26px;
 						}
 					.number-people {
 						margin: 0;
@@ -353,11 +393,13 @@ a {
 						border-color: #ebebeb;
 					}
 					.icon-plus:hover::before,
-					.icon-minus:hover::before {
+					.icon-minus:hover::before,
+					.icon-calendar:hover::before {
 						color: #000000;
 					}
 					.icon-plus:active::before,
-					.icon-minus:active::before {
+					.icon-minus:active::before,
+					.icon-calendar:active::before {
 						color: #81b3d2;
 					}
 					.icon-plus::before { 
@@ -410,8 +452,8 @@ a {
 		position: relative;
 	}
 		.map {
-			position: absolute;
-			bottom: -197px;
+			position: relative;
+			bottom: -120px;
 			z-index: 0;
 			width: 100%;
 			height: 593px;
@@ -454,7 +496,7 @@ a {
 				display: inline-block;
 				width: 46px;
 				height: 48px;
-				margin: 31px 7px 35px 0;
+				margin: 33px 6px 35px 0;
 				background: #81b3d2;
 				color: #ffffff;
 				font-size: 19px;
@@ -485,21 +527,22 @@ a {
 				padding: 13px 0;
 				font-size: 23px;
 			}
-		.footer-copyright {
-		}
 			.footer-copyright p {
-				float: left;
+				display: inline-block;
 				margin: 0;
-				padding: 46px 7px 48px;
-				padding-left: 25%;
+				padding: 0;
+				padding-right: 4px;
+				padding-bottom: 2px;
 				line-height: 26px;
+				vertical-align: middle;
 			}
 			.logo-copyright {
-				float: left;
+				display: inline-block;
 				width: 113px;
 				height: 39px;
-				margin: 40px 0 41px;
+				margin: 41px 0 40px;
 				background: url("../img/spritesheet1.png") no-repeat -5px -5px;
+				vertical-align: middle;
 			}
 			.logo-copyright:hover {
 				background-position: -5px -54px;
@@ -561,6 +604,14 @@ a {
 			.filter-housing input:checked + label::before {
 				content: "\2611";
 			}
+			.filter-infrastructure input:checked:disabled + label::before,
+			.filter-housing input:checked:disabled + label::before {
+				color: #6a6a6a;
+			}
+			.filter-infrastructure input:disabled + label::before,
+			.filter-housing input:disabled + label::before {
+				color: #6a6a6a;
+			}
 			.filter-price {
 				float: right;
 				width: 31%;
@@ -588,7 +639,8 @@ a {
 					width: 2px;
 					height: 22px;
 					background: #ffffff;
-					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					        transform: translate(-50%, -50%);
 				}
 					.price-controls label {
 						display: inline-block;
@@ -599,8 +651,8 @@ a {
 					}
 					.price-controls .min-price,
 					.price-controls .max-price {
-						width: 35.33%;
-						padding-left: 10.5%;
+						width: 36.33%;
+						padding-left: 9.5%;
 					}
 					.price-controls input {
 						width: 50px;
@@ -836,6 +888,20 @@ a {
 
             /**catalog_end**/
 
+            /**form_begin**/
 
+	.content-search {
+		background: #123234;
+		padding: 100px;
+	}
+	.content-search .search {
+		margin-bottom: 0;
+	}
+		.content-search .search-hotel {
+			position: static;
+			display: block;
+		}
+
+             /**form_end**/
 
 
